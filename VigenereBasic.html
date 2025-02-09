@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-Trices | Key Constructor for Vigenere Cipher</title>
+  <link rel="icon" href="assets/letter_v.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+  <nav>
+    <a href="" style="color: #424242; cursor: default;">Basic</a>
+    <a href="VigenereModify.html">Modified</a>
+  </nav>
+
+  <h1>The Use of Matrices over the Ring Z<sub>149</sub> to Construct<br>Encryption Key in the Vigenere Cipher</h1>
+  <h3>Basic System</h3>
+
+  <main>
+    <div class="plain">
+      <label for="input">Message:</label>
+      <textarea id="plaintext-input" wrap="soft" placeholder="Type your message here!">Prodi S1 Matematika FMIPA UM 2024</textarea>
+    </div>
+    
+    <div class="key">
+      <label for="key1-input">Key 1:</label>
+      <input type="text" id="key1-input" placeholder="Enter your first key!" value="Kr!pT0">
+      
+      <label for="key2-input">Key 2:</label>
+      <input type="text" id="key2-input" placeholder="Enter your second key!" value="gR@fi">
+      
+      <button id="encrypt-btn" onclick="encryptingButton()">Encrypt!</button>
+    </div>
+    
+    <div class="cipher">
+      <label>Ciphertext:</label>
+      <textarea readonly id="ciphertext-result" placeholder="Press 'Encrypt!' button to get ciphertext!"></textarea>
+
+    </div>
+  </main>
+  
+  <section>
+    <div></div>
+    <div class="plain-back">
+      <button id="decrypt-btn" onclick="decryptingButton()">Decrypt!</button>
+      <label>Returned Message:</label>
+      <textarea readonly id="plaintext-return" placeholder="Press 'Decrypt!' to get your message back!"></textarea>
+    </div>
+
+    <div class="info">
+      <button onclick="InfoButton()" id="info-btn">Info</button>
+      <div class="info-text-area">
+        <textarea readonly type="text" placeholder="Press 'Info' to show data information!" id="data-info"></textarea>
+        <textarea readonly type="text" placeholder="Press 'Encrypt!' to show modified key pattern!" id="key-pattern"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h5>
+      Prototype by:<br><br>
+      Farras Alif Daffa' (210312625308)<br>
+      Department of Mathematics, Univeristas Negeri Malang
+    </h5>
+  </footer>
+
+  <script src="basic-vig.js"></script>
+</body>
+</html>
